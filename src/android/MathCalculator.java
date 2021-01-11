@@ -60,8 +60,8 @@ public class MathCalculator extends CordovaPlugin {
     {
         if(args != null)
         {
-            int p1 = Integer.parsInt(args.getJSONObject(0).getString("param1"));
-            int p2 = Integer.parsInt(args.getJSONObject(0).getString("param1"));
+            int p1 = Integer.parseInt(args.getJSONObject(0).getString("param1"));
+            int p2 = Integer.parseInt(args.getJSONObject(0).getString("param2"));
 
             callbackContext.success(""+(p1-p2));
         }
